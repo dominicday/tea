@@ -27,4 +27,11 @@ g++ -o hello hello.cpp
 ./hello
 ```
 
+Alternatively, for those inclined towards the modern alchemy of CMake:
+```bash
+cmake .
+make
+./hello
+```
+
 Proceed with caution, dear reader, for the colors may dazzle the eye and the tea may tempt the palate.

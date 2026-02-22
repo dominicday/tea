@@ -4,6 +4,11 @@
 #include <vector>
 #include <cctype>
 
+/**
+ * I have the simplest tastes. I am always satisfied with the best of colors.
+ * This function adorns the text with the full spectrum of the rainbow,
+ * for why should text be dull when it can be magnificent?
+ */
 void rainbow_print(const std::string& text) {
     std::vector<std::string> colors = {
         "\033[31m",  // Red
@@ -22,11 +27,21 @@ void rainbow_print(const std::string& text) {
         } else {
             std::cout << colors[color_index % colors.size()] << c << reset;
             color_index++;
+            // Prevent integer overflow for the eternal optimist who prints a novel.
+            if (color_index >= colors.size()) {
+                color_index = 0;
+            }
         }
     }
     std::cout << std::endl;
 }
 
+/**
+ * A file is like a soul; it has secrets it wishes to whisper.
+ * We open it, not with force, but with the gentle `std::ifstream`,
+ * hoping to find the content within, lest we be met with the
+ * tragic silence of a missing file.
+ */
 void read_and_print(const std::string& filename) {
     std::ifstream file(filename);
     if (file.is_open()) {

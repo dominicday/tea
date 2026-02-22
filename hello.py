@@ -1,6 +1,11 @@
 import itertools
 
 def rainbow_print(text):
+    """
+    To print is human, to print in rainbow, divine.
+    This function bestows upon the mundane text a vibrant attire,
+    cycling through hues like a dandy through his wardrobe.
+    """
     colors = [
         "\033[31m",  # Red
         "\033[33m",  # Yellow
@@ -23,6 +28,11 @@ def rainbow_print(text):
     print(rainbow_text)
 
 def read_and_print(filename):
+    """
+    The truth is rarely pure and never simple, but the contents of a file
+    must be exposed. We shall attempt to read the secrets within,
+    provided they are not lost to the abyss of a FileNotFoundError.
+    """
     try:
         with open(filename, 'r') as f:
             content = f.read().strip()

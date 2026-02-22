@@ -40,8 +40,11 @@ def read_and_print(filename):  # To open the book of the world, to read the entr
     except FileNotFoundError:  # The abyss stares back, the void answers.
         print(f"File {filename} not found.")  # A lament for the lost, a dirge for the missing.
 
-if __name__ == "__main__":  # The beginning of the end, the start of the journey.
+def main():  # The grand entrance, the curtain rises.
     rainbow_print("Hello, World!")  # The primal scream, the first utterance of creation.
     read_and_print("bag")  # Investigating the sack, the container of leaves.
     read_and_print("leaf")  # Examining the foliage, the nature itself.
     read_and_print("cup")  # Peering into the chalice, the vessel of potential.
+
+if __name__ == "__main__":  # The beginning of the end, the start of the journey.
+    main()  # The call to action, the hero's journey begins.
